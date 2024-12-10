@@ -37,7 +37,7 @@ public class NoteController {
     }
 
     @PutMapping
-    public ResponseEntity<Note> upfateNpte(@RequestBody Note note){
+    public ResponseEntity<Note> updateNote(@RequestBody Note note){
         return new ResponseEntity<>(noteService.updateNote(note),HttpStatus.OK);
     }
 
